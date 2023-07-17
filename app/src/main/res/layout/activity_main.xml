@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+       >
+
+   <ImageView
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:src="@drawable/cam"
+       android:id="@+id/foto"
+       ></ImageView>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_toEndOf="@id/foto"
+       android:layout_alignTop="@id/foto"
+       android:layout_marginStart="16dp"
+       android:hint="Nombre del producto"
+       android:textSize="22dp"
+       android:textColor="@color/black"
+       android:gravity="center"
+       android:id="@+id/nombre"
+      ></EditText>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_toEndOf="@id/foto"
+       android:layout_alignBottom="@id/foto"
+       android:layout_marginStart="16dp"
+       android:hint="Presentación producto"
+       android:textSize="22dp"
+       android:textColor="@color/black"
+       android:gravity="center"
+       android:id="@+id/presentacion"
+
+       ></EditText>
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="@color/black"
+       android:layout_marginTop="16dp"
+       android:layout_below="@+id/presentacion"
+       android:id="@+id/linea"
+       ></View>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/linea"
+       android:text="Caracteristicas"
+       android:gravity="center"
+       android:textColor="@color/black"
+       android:textStyle="bold"
+       android:textSize="30dp"
+       android:layout_marginTop="16dp"
+       android:id="@+id/car"
+></TextView>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Agregue caracteristica"
+       android:textSize="22dp"
+       android:textColor="@color/black"
+       android:gravity="center"
+       android:id="@+id/caracte"
+       android:layout_below="@+id/car"
+       android:layout_marginTop="16dp"
+
+       ></EditText>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/caracte"
+       android:text="Calificación"
+       android:gravity="center"
+       android:textColor="@color/black"
+       android:textStyle="bold"
+       android:textSize="30dp"
+       android:layout_marginTop="16dp"
+       android:id="@+id/cal"
+       ></TextView>
+   <RatingBar
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/cal"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/proce"
+       android:progressTint="@color/avance"
+
+       ></RatingBar>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:text="Guardar"
+       android:textSize="30dp"
+       android:textStyle="bold"
+       android:id="@+id/guarda"
+       ></Button>
+
+</RelativeLayout>
